@@ -1,0 +1,94 @@
+{% extends 'layouts/basic_layout.html' %}
+
+{% block title %} 人员列表 {% endblock %}
+
+{% block content %}
+    {#处理弹窗信息#}
+    {% if messages %}
+        <script>
+            {% for msg in messages %}
+                alert('{{ msg.message }}');
+            {% endfor %}
+        </script>
+    {% endif %}
+
+    <div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">住宿用户列表</h3>
+            </div>
+            <div class="panel-body">
+                在这里可以增加，删除，修改，查询用户的信息
+            </div>
+        </div>
+
+
+        <div style="margin: 30px">
+            <a class="btn btn-glow-dark btn-lg" href="/user/add/">新建住宿用户</a>
+        </div>
+    </div>
+    <!-- Table -->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>名称</th>
+            <th>年龄</th>
+            <th>校园卡余额</th>
+            <th>创建时间</th>
+            <th>性别</th>
+            <th>宿舍号</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for obj in queryset %}
+            <tr>
+            <th>{{ obj.id }}</th>
+            <td>{{ obj.name }}</td>
+            <td>{{ obj.age }}</td>
+            <td>{{ obj.account }}</td>
+            {#                            日期类模板语法的写法，区分python语法#}
+            <td>{{ obj.create_time|date:"Y-m-d" }}</td>
+            {#                            区分python元祖套元祖，注意没有括号#}
+            <td>{{ obj.get_gender_display }}</td>
+            <td>{{ obj.dorm }}</td>
+
+            <td>
+                <a style="margin-top: 2px" class="btn btn-primary btn-xs" href="/user/{{ obj.id }}/edit/">编辑</a>
+                <a style="margin-top: 2px" class="btn btn-danger btn-xs" href="/user/{{ obj.id }}/delete/">删除</a>
+                <a style="margin-top: 2px" class="btn btn-success btn-xs" href="/user/{{ obj.id }}/charge/">充值</a>
+            </td>
+        {% endfor %}
+    </table>
+
+    {#images/user/avatar-1.jpg#}
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                <a href="{{ prev_url }}" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                </a>
+            </li>
+            {{ page_str }}
+            <li>
+                <a href="{{ for_url }}" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                </a>
+            </li>
+        </ul>
+        {#    /images/user/avatar-3#}
+        <form method="get">
+            <div class="col-lg-6" style="width: 200px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="输入页码" name="page">
+                    <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">前往</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+        </form>
+    </nav>
+
+{% endblock %}

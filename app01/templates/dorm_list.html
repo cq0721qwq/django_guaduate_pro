@@ -1,0 +1,90 @@
+{% extends 'layouts/basic_layout.html' %}
+
+{% block title %} 人员列表 {% endblock %}
+
+{% block content %}
+    {#    面板组#}
+    <div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">宿舍详细信息列表</h3>
+            </div>
+            <div class="panel-body">
+                在这里可以增加，删除，修改，查询宿舍的信息
+            </div>
+        </div>
+
+
+        <div style="margin: 30px">
+            <a class="btn btn-glow-dark btn-lg" href="/dorm/add/">新建宿舍</a>
+            <a class="btn btn-glow-dark btn-lg" href="/dorm/find/lowE/">快捷查找低电费宿舍</a>
+            <a class="btn btn-glow-dark btn-lg" href="/dorm/back/">返回宿舍列表</a>
+        </div>
+
+
+    </div>
+    <!-- Table -->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>应住</th>
+            <th>实住</th>
+            <th>寝室长</th>
+            <th>寝室长电话</th>
+            <th>电费</th>
+            <th>宿舍星级</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for obj in queryset %}
+            <tr>
+            <th>{{ obj.dorm_id }}</th>
+            <td>{{ obj.accom_num }}</td>
+            <td>{{ obj.on_canpus_num }}</td>
+            <td>{{ obj.administrator }}</td>
+            <td>{{ obj.admin_mobile }}</td>
+            <td>{{ obj.electric_charge }}</td>
+            <td>{{ obj.get_level_display }}</td>
+
+            <td>
+                <a style="margin-top: 2px" class="btn btn-primary btn-xs" href="/dorm/{{ obj.dorm_id }}/edit/">编辑</a>
+                <a style="margin-top: 2px" class="btn btn-danger btn-xs" href="/dorm/{{ obj.dorm_id }}/delete/">删除</a>
+                <a style="margin-top: 2px" class="btn btn-attach btn-xs" href="/dorm/{{ obj.dorm_id }}/charge/">充电</a>
+            </td>
+        {% endfor %}
+    </table>
+
+    {#images/user/avatar-1.jpg#}
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                <a href="{{ prev_url }}" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                </a>
+            </li>
+            {{ page_str }}
+            <li>
+                <a href="{{ for_url }}" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                </a>
+            </li>
+        </ul>
+
+
+        {#快捷页码框#}
+        <form method="get">
+            <div class="col-lg-6" style="width: 200px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="输入页码" name="page">
+                    <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">前往</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+        </form>
+    </nav>
+
+{% endblock %}

@@ -1,0 +1,130 @@
+{% extends 'layouts/basic_layout.html' %}
+
+{% block title %}留言列表{% endblock %}
+{% block content %}
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/article/list/?order=1&search={{ search }}">
+                        最新
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="/article/list/?order=2&search={{ search }}">
+                        最热
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="/article/list/">
+                        返回首页
+                    </a>
+                </li>
+            </ol>
+        </nav>
+
+        {% if search %}
+            {% if queryset %}
+                <h4><span style="color: red">"{{ search }}"</span>的搜索结果如下：</h4>
+                <hr>
+            {% else %}
+                <h4>暂无<span style="color: red">"{{ search }}"</span>有关的文章。</h4>
+                <hr>
+            {% endif %}
+        {% endif %}
+
+        <div class="row mt-2">
+            {% for query in queryset %}
+                <!-- 文章内容 -->
+                <div class="col-4 mb-4">
+                    <!-- 卡片容器 -->
+                    <div class="card h-100">
+                        <!-- 标题 -->
+                        <h4 class="card-header">
+                            {{ query.title }}
+                            <div style="color:gray">
+                                <p style="font-size: small;margin-top: 10px">
+                                    文章发布于{{ query.created|date:"Y-m-d h:m:s" }}
+                                    || 作者：{{ query.author_id }}
+
+                                </p>
+                            </div>
+                        </h4>
+                        <!-- 摘要 -->
+                        <div class="card-body">
+                            <p class="card-text">{{ query.body|slice:'100' }}...</p>
+                        </div>
+                        <!-- 注脚 -->
+                        <div class="card-footer">
+
+                            <a href="/article/{{ query.id }}/detail/" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                                阅读本文
+                            </a>
+                            <span>
+                                <small class="col align-self-end" style="color: gray;">
+                                浏览: {{ query.total_views }}
+                                </small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="container" style="width: 300px;position: center">
+        <a class="btn btn-glow-dark btn-lg" href="/article/add/">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            发布您的留言/文章
+        </a>
+    </div>
+
+    {#分页器与搜索框#}
+    <nav aria-label="Page navigation">
+        <ul class="pagination" style="margin-left: 50px">
+            <li>
+                <a href="{{ prev_url }}" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                </a>
+            </li>
+            {{ page_str }}
+            <li>
+                <a href="{{ for_url }}" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                </a>
+            </li>
+        </ul>
+
+        {#    /images/user/avatar-3#}
+        <form method="get">
+            <div class="col-lg-6" style="width: 300px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="输入页码" name="page">
+                    <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">前往</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+        </form>
+
+
+        <form method="get">
+            <div class="col-lg-6" style="width: 300px;">
+                <div class="input-group">
+                    <input type="text"
+                           class="form-control"
+                           name="search"
+                           placeholder="搜索文章..."
+                           required
+                    >
+                    <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">搜索</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+        </form>
+
+
+    </nav>
+{% endblock %}

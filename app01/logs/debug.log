@@ -1,0 +1,557 @@
+WARNING 2023-02-17 03:24:04,821 log 16596 6492 Not Found: /
+WARNING 2023-02-17 03:25:13,274 log 16596 6492 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 03:25:13,327 log 16596 10352 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 03:25:13,339 log 16596 6972 Not Found: /article/static/assets/images/user/avatar-3.jpg
+ERROR 2023-02-17 03:25:16,815 log 16596 6972 Internal Server Error: /article/1000/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Graduate Project\Django\app01\views.py", line 363, in article_detail
+    query = models.ArticlePost.objects.get(id=nid)  # 拿到具体的文章对象
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+app01.models.ArticlePost.DoesNotExist: ArticlePost matching query does not exist.
+ERROR 2023-02-17 03:25:47,412 log 16596 6972 Internal Server Error: /article/60/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Graduate Project\Django\app01\views.py", line 363, in article_detail
+    query = models.ArticlePost.objects.get(id=nid)  # 拿到具体的文章对象
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+app01.models.ArticlePost.DoesNotExist: ArticlePost matching query does not exist.
+WARNING 2023-02-17 03:25:51,743 log 16596 6972 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 03:25:51,806 log 16596 10352 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 03:25:51,814 log 16596 6492 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 03:27:04,767 log 16596 6492 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 03:27:04,825 log 16596 10352 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 03:27:04,834 log 16596 6972 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 03:27:37,817 log 16596 10352 Not Found: /
+WARNING 2023-02-17 03:45:03,354 log 16596 13060 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 03:45:03,410 log 16596 14516 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 03:45:03,415 log 16596 31464 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 03:45:21,193 log 16596 31464 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 03:45:21,246 log 16596 14516 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 03:45:21,252 log 16596 13060 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 03:46:07,907 log 16596 13060 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 03:46:07,970 log 16596 14516 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 03:46:07,972 log 16596 31464 Not Found: /article/static/assets/images/user/avatar-3.jpg
+ERROR 2023-02-17 03:46:12,559 log 16596 31464 Internal Server Error: /article/999/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Graduate Project\Django\app01\views.py", line 363, in article_detail
+    query = models.ArticlePost.objects.get(id=nid)  # 拿到具体的文章对象
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+app01.models.ArticlePost.DoesNotExist: ArticlePost matching query does not exist.
+ERROR 2023-02-17 03:46:25,960 log 16596 31464 Internal Server Error: /article/999/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Graduate Project\Django\app01\views.py", line 363, in article_detail
+    query = models.ArticlePost.objects.get(id=nid)  # 拿到具体的文章对象
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+app01.models.ArticlePost.DoesNotExist: ArticlePost matching query does not exist.
+ERROR 2023-02-17 03:46:30,595 log 16596 31464 Internal Server Error: /article/96666/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Graduate Project\Django\app01\views.py", line 363, in article_detail
+    query = models.ArticlePost.objects.get(id=nid)  # 拿到具体的文章对象
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\db\models\query.py", line 437, in get
+    self.model._meta.object_name
+app01.models.ArticlePost.DoesNotExist: ArticlePost matching query does not exist.
+WARNING 2023-02-17 03:47:09,843 log 16596 31464 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 03:47:09,881 log 16596 14516 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 03:47:09,888 log 16596 13060 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 16:45:52,164 log 10432 12588 Not Found: /
+WARNING 2023-02-17 16:45:52,276 log 10432 12588 Not Found: /favicon.ico
+WARNING 2023-02-17 16:46:20,483 log 10432 12588 Not Found: /static/ckeditor/ckeditor-init.js
+WARNING 2023-02-17 16:46:20,489 log 10432 26824 Not Found: /static/ckeditor/ckeditor/ckeditor.js
+WARNING 2023-02-17 16:46:20,494 log 10432 23260 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 16:46:20,496 log 10432 12216 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 16:46:20,502 log 10432 23268 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 16:46:32,961 log 10432 23268 Not Found: /static/ckeditor/ckeditor-init.js
+WARNING 2023-02-17 16:46:32,962 log 10432 12216 Not Found: /static/ckeditor/ckeditor/ckeditor.js
+WARNING 2023-02-17 16:46:32,979 log 10432 26824 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 16:46:32,980 log 10432 12588 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 16:46:32,980 log 10432 23260 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 16:46:42,966 log 10432 12588 Not Found: /static/ckeditor/ckeditor-init.js
+WARNING 2023-02-17 16:46:42,972 log 10432 23260 Not Found: /static/ckeditor/ckeditor/ckeditor.js
+WARNING 2023-02-17 16:46:42,988 log 10432 12216 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 16:46:42,991 log 10432 23268 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 16:46:42,994 log 10432 26824 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 16:47:00,104 log 10432 26824 Not Found: /static/ckeditor/ckeditor-init.js
+WARNING 2023-02-17 16:47:00,109 log 10432 23268 Not Found: /static/ckeditor/ckeditor/ckeditor.js
+WARNING 2023-02-17 16:47:00,127 log 10432 12216 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 16:47:00,128 log 10432 23260 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 16:47:00,132 log 10432 12588 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 16:48:02,483 log 10432 12588 Not Found: /static/ckeditor/ckeditor-init.js
+WARNING 2023-02-17 16:48:02,484 log 10432 23260 Not Found: /static/ckeditor/ckeditor/ckeditor.js
+WARNING 2023-02-17 16:48:02,512 log 10432 12216 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 16:48:02,522 log 10432 26824 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 16:48:02,523 log 10432 23268 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 16:53:29,881 log 14176 9960 Not Found: /
+WARNING 2023-02-17 17:01:35,808 log 6048 11180 Not Found: /
+WARNING 2023-02-17 17:01:47,234 log 6048 11180 Not Found: /static/ckeditor/ckeditor-init.js
+WARNING 2023-02-17 17:01:47,241 log 6048 24664 Not Found: /static/ckeditor/ckeditor/ckeditor.js
+WARNING 2023-02-17 17:01:47,276 log 6048 29672 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:01:47,277 log 6048 28900 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:01:47,285 log 6048 15316 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:01:52,493 log 6048 28900 Not Found: /static/ckeditor/ckeditor/ckeditor.js
+WARNING 2023-02-17 17:01:52,499 log 6048 15316 Not Found: /static/ckeditor/ckeditor-init.js
+WARNING 2023-02-17 17:01:52,535 log 6048 24664 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:01:52,537 log 6048 29672 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:01:52,538 log 6048 11180 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:02:25,834 log 10616 5996 Not Found: /
+WARNING 2023-02-17 17:02:46,492 log 10616 22784 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:02:46,496 log 10616 28700 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:02:46,499 log 10616 24428 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:06:54,565 log 11568 10884 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:06:54,594 log 11568 27432 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:06:54,596 log 11568 24008 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:06:57,046 log 11568 24008 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:06:57,065 log 11568 27432 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:06:57,068 log 11568 10884 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:07:00,467 log 11568 10884 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:07:00,489 log 11568 27432 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:07:00,490 log 11568 24008 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:07:12,671 log 11568 24008 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:07:12,699 log 11568 27432 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:07:12,700 log 11568 10884 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:07:15,792 log 11568 10884 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:07:15,813 log 11568 27432 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:07:15,817 log 11568 24008 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:07:25,329 log 11568 24008 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:07:25,349 log 11568 27432 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:07:25,353 log 11568 10884 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:09:23,916 log 28120 28560 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:09:23,952 log 28120 4728 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:09:23,955 log 28120 4496 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:09:32,120 log 28120 4496 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+WARNING 2023-02-17 17:09:32,120 log 28120 4728 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:09:36,469 log 28120 4728 Not Found: /static/ckeditor/ckeditor/plugins/codesnippet/dialogs/codesnippet.js
+WARNING 2023-02-17 17:09:47,286 log 28120 4728 Not Found: /static/ckeditor/ckeditor/plugins/magicline/images/icon.png
+WARNING 2023-02-17 17:18:10,447 log 10872 13848 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:18:10,473 log 10872 15184 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:18:10,479 log 10872 10656 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:18:12,108 log 10872 10656 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+WARNING 2023-02-17 17:18:12,108 log 10872 15184 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:24:58,917 log 11252 26548 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:24:58,939 log 11252 2484 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:24:58,945 log 11252 4504 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:28:00,442 log 20268 8204 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:28:00,467 log 20268 4188 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:28:00,474 log 20268 26128 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:28:05,541 log 20268 4188 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:28:05,542 log 20268 26128 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+WARNING 2023-02-17 17:28:06,889 log 20268 26128 Not Found: /static/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js
+WARNING 2023-02-17 17:28:08,551 log 20268 26128 Not Found: /static/ckeditor/ckeditor/plugins/image/dialogs/image.js
+WARNING 2023-02-17 17:28:38,939 log 20268 26128 Not Found: /static/ckeditor/ckeditor/plugins/table/dialogs/table.js
+WARNING 2023-02-17 17:28:44,933 log 20268 26128 Not Found: /static/ckeditor/ckeditor/plugins/magicline/images/icon.png
+WARNING 2023-02-17 17:29:05,236 log 20268 26128 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:29:05,259 log 20268 4188 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:29:05,264 log 20268 8204 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:29:43,329 log 20268 8204 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+WARNING 2023-02-17 17:29:43,330 log 20268 4188 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:31:53,969 log 13556 18960 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:31:53,998 log 13556 9696 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:31:54,004 log 13556 4312 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:31:56,384 log 13556 4312 Not Found: /static/ckeditor/ckeditor/plugins/table/dialogs/table.js
+WARNING 2023-02-17 17:31:56,386 log 13556 9696 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:32:23,598 log 13556 9696 Not Found: /static/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js
+WARNING 2023-02-17 17:32:26,863 log 13556 9696 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+WARNING 2023-02-17 17:32:37,550 log 13556 9696 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:32:37,585 log 13556 4312 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:32:37,586 log 13556 18960 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:32:41,056 log 13556 4312 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:32:41,063 log 13556 18960 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+WARNING 2023-02-17 17:35:42,286 log 29056 3656 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:35:42,317 log 29056 18952 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:35:42,325 log 29056 10220 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:35:44,762 log 29056 10220 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+WARNING 2023-02-17 17:35:44,763 log 29056 18952 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:39:58,171 log 18616 23956 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:39:58,210 log 18616 12544 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:39:58,213 log 18616 10676 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:39:59,927 log 18616 12544 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:39:59,927 log 18616 10676 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+WARNING 2023-02-17 17:40:07,160 log 18616 10676 Not Found: /static/ckeditor/ckeditor/plugins/table/dialogs/table.js
+WARNING 2023-02-17 17:40:36,602 log 28384 8372 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:40:36,641 log 28384 26672 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:40:36,642 log 28384 15352 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:40:52,619 log 15664 12500 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:40:52,653 log 15664 29568 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:40:52,657 log 15664 29608 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:40:54,370 log 15664 29568 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:40:54,371 log 15664 29608 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+WARNING 2023-02-17 17:43:54,210 log 3960 23464 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:43:54,243 log 3960 18348 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:43:54,248 log 3960 4908 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:43:54,471 log 3960 4908 Not Found: /static/ckeditor/ckeditor/plugins/prism/plugin.js
+WARNING 2023-02-17 17:43:59,194 log 3960 4908 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:43:59,208 log 3960 18348 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:43:59,222 log 3960 23464 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:43:59,460 log 3960 23464 Not Found: /static/ckeditor/ckeditor/plugins/prism/plugin.js
+WARNING 2023-02-17 17:44:12,360 log 14856 6164 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:44:12,400 log 14856 24392 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:44:12,408 log 14856 8160 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:44:54,279 log 14856 8160 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:44:54,318 log 14856 6164 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:44:54,319 log 14856 24392 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:46:05,249 log 10564 4788 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:46:05,285 log 10564 27456 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:46:05,293 log 10564 14100 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:46:26,207 log 20140 11584 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:46:26,245 log 20140 26128 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:46:26,256 log 20140 21572 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:54:10,235 log 11608 24516 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:54:10,273 log 11608 17152 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:54:10,281 log 11608 2208 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:54:53,049 log 14472 26620 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 17:54:53,085 log 14472 7612 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 17:54:53,094 log 14472 28084 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 17:54:56,652 log 14472 7612 Not Found: /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css
+WARNING 2023-02-17 17:54:56,653 log 14472 28084 Not Found: /static/ckeditor/ckeditor/plugins/codesnippet/dialogs/codesnippet.js
+WARNING 2023-02-17 17:55:02,254 log 14472 28084 Not Found: /static/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js
+ERROR 2023-02-17 18:02:55,327 log 12880 10676 Internal Server Error: /article/57/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\GraduateProject\Django\app01\views.py", line 396, in article_detail
+    return render(request, 'article_detail.html', context)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\cached.py", line 58, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 143: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2023-02-17 18:03:03,008 log 12880 10676 Internal Server Error: /article/57/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\GraduateProject\Django\app01\views.py", line 396, in article_detail
+    return render(request, 'article_detail.html', context)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\cached.py", line 58, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 143: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2023-02-17 18:03:03,886 log 12880 10676 Internal Server Error: /article/57/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\GraduateProject\Django\app01\views.py", line 396, in article_detail
+    return render(request, 'article_detail.html', context)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\cached.py", line 58, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 143: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2023-02-17 18:03:04,415 log 12880 10676 Internal Server Error: /article/57/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\GraduateProject\Django\app01\views.py", line 396, in article_detail
+    return render(request, 'article_detail.html', context)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\cached.py", line 58, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 143: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2023-02-17 18:03:42,030 log 12880 10676 Internal Server Error: /article/61/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\GraduateProject\Django\app01\views.py", line 396, in article_detail
+    return render(request, 'article_detail.html', context)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\cached.py", line 58, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 143: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2023-02-17 18:04:51,896 log 13840 24428 Internal Server Error: /article/61/detail/
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\GraduateProject\Django\app01\views.py", line 396, in article_detail
+    return render(request, 'article_detail.html', context)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "F:\Anaconda\install\envs\python37\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 143: 'static', expected 'endblock'. Did you forget to register or load this tag?
+WARNING 2023-02-17 18:06:08,032 log 23240 28072 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 18:06:08,034 log 23240 23268 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 18:06:08,036 log 23240 27236 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 18:09:09,597 log 23240 23268 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 18:09:09,599 log 23240 27236 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 18:09:09,601 log 23240 28072 Not Found: /article/static/assets/images/user/avatar-3.jpg
+WARNING 2023-02-17 18:15:14,080 log 23240 14020 Not Found: /article/static/assets/images/user/avatar-1.jpg
+WARNING 2023-02-17 18:15:14,083 log 23240 5048 Not Found: /article/static/assets/images/user/avatar-2.jpg
+WARNING 2023-02-17 18:15:14,085 log 23240 6108 Not Found: /article/static/assets/images/user/avatar-3.jpg
